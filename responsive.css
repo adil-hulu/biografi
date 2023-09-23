@@ -1,0 +1,95 @@
+/* Media Quires */
+
+/* Laptop */
+@media (max-width: 1336px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 60.5%;
+  }
+
+  #humberger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: #030303;
+    display: block;
+    margin: 1.5rem;
+    padding: 8px;
+    font-size: 1.5rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .hero::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    bottom: 0;
+    background: linear-gradient(
+      0deg,
+      rgba(1, 1, 3, 1) 3%,
+      rgba(225, 255, 255, 0) 50%
+    );
+  }
+
+  .hero .content .biodata {
+    right: 1.5rem;
+    top: 4rem;
+    font-size: 0.9rem;
+  }
+
+  .hero .content img {
+    display: block;
+    padding: 0;
+    margin-right: 0;
+    gap: 0.1 rem;
+    margin-left: 0.1rem;
+    min-width: 25rem;
+    min-height: 10rem;
+  }
+  .hero .content .biodata h1,
+  p {
+    font-size: 1.3rem;
+  }
+
+  .hero .content .biodata .social {
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}

@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  /* min-height: 2000px; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1%;
+  background-color: rgb(1, 1, 1, 0.8);
+  border-bottom: 1px solid #fff;
+  font-size: 1.3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .logo-navbar .image-navbar {
+  border-radius: 100%;
+  background-color: #ffffffce;
+  left: 0;
+  height: 7rem;
+  width: 6rem;
+  transition: 0.5s ease;
+}
+
+.navbar .logo-navbar .image-navbar:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.navbar .text-navbar {
+  font-family: "Great Vibes";
+  font-size: 3rem;
+  color: #fff;
+  padding: 1rem 3%;
+}
+
+.navbar .navbar-nav a {
+  display: inline-block;
+  color: #fafafa;
+  font-size: 1.3rem;
+  margin-right: 1.3rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #b6895b;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #b6895b;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #b6895b;
+}
+
+#humberger-menu {
+  display: none;
+}
+/* Hero Section */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url("../image/gomo.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 3%,
+    rgba(225, 255, 255, 0) 50%
+  );
+}
+
+.hero .content {
+  display: contents;
+  margin-top: 5rem;
+}
+.hero .content img {
+  margin-top: 11rem;
+  margin-left: 4rem;
+  width: 50vh;
+  height: 80vh;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.hero .content img:hover {
+  transition: 0.5s linear;
+  transform: scale(1.3);
+  z-index: 9999;
+}
+
+.hero .content .biodata {
+  border-radius: 2%;
+  max-width: 40rem;
+
+  background-color: #fff;
+
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.hero .biodata h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  /* text-shadow: 1px 1px 3px rgb(255, 255, 255); */
+  margin-left: 1rem;
+  left: 10rem;
+}
+.hero .biodata p {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.hero .biodata .social {
+  flex: 1rem;
+
+  text-align: right;
+}
+
+.hero .biodata .social a {
+  color: #fff;
+  margin: 0.5rem;
+}
+
+.hero .biodata .social a:hover {
+  color: #b6895b;
+}
+
+.hero .biodata .decoration img {
+  display: inline-block;
+
+  fill: #fff;
+}
